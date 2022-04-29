@@ -1,0 +1,418 @@
+/* General */
+@media (max-width: 1200px) {
+    .h1-large {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+  .borderMobile {
+    border-right: 0 !important;
+    border-bottom: 1px #ffffff solid !important;
+  }
+}
+
+
+.vh-15 {
+    height: 15vh;
+}
+
+/* /General !!! */
+
+/* Nav */
+.w-15 {
+    max-width: 40px;
+  }
+  
+  .navbar-toggler:focus {
+      outline: none;
+  }
+  
+  .navbar-toggler {
+      border: 0;
+      cursor: pointer;
+      width: 2.5em;
+      height: 2.5em;
+      padding: 0 0 0.15em 0.35em ;
+  }
+  
+  .navbar-toggler-inner {
+      width: 1.5em;
+  }
+  
+  .navbar-toggler-inner::after {
+      width: 1em;
+  }
+  
+  .navbar-toggler-inner::before {
+      width: 2em;
+  }
+  
+  .navbar-toggler-inner,
+  .navbar-toggler-inner::before,
+  .navbar-toggler-inner::after {
+      height: 0.16em;
+      background-color: #000000;
+      position: absolute;
+  }
+  
+  .navbar-toggler-inner::before {
+      content: "";
+      display: block;
+      top: -0.5em;
+      border-radius: 0.25rem !important;
+      right: 0;
+  }
+  
+  .navbar-toggler-inner::after {
+      content: "";
+      display: block;
+      bottom: -0.5em;
+      border-radius: 0.25rem !important;
+      right: 0;
+  }
+  
+  .navbar-toggler.active .navbar-toggler-inner {
+      transition: 0.2s;
+      transform: rotate(45deg);
+      background-color: #ffffff;
+  }
+  
+  .navbar-toggler.active .navbar-toggler-inner::before {
+      top: 0;
+      opacity: 0;
+  }
+  
+  .navbar-toggler.active .navbar-toggler-inner::after {
+      bottom: 0;
+      transform: rotate(-90deg);
+      background-color: #ffffff;
+  }
+  
+  .navbar-toggler-inner {
+      transition: 0.2s;
+      transform: rotate(0deg);
+  }
+  
+  .navbar-toggler.active .navbar-toggler-inner::after {
+      width: 1.5em;
+  }
+  
+  .navbar-toggler.active .navbar-toggler-inner {
+      width: 1.5em;
+  }
+  
+  /* Hover on nav btn */
+
+  .full, .button .qube .front::before,
+  .button .qube .front, 
+  .button .qube .back {
+    width: 100%;
+    /* height: 100%; */
+  }
+  
+  .button {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+  .button .qube {
+    position: relative;
+    height: 50px;
+    width: 185px;
+  }
+  .button .qube .front, .button .qube .back {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transform: rotateX(-90deg);
+    transition: transform 0.3s ease;
+    position: absolute;
+    color: #FFF !important;
+    line-height: 45px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  .button .qube .front {
+    background-color: #191919;
+  }
+  .button .qube .front::before {
+    content: "";
+    display: block;
+    z-index: -1;
+  }
+  .button .qube .front::after {
+    background: #FFF;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 1;
+  }
+  .button .qube .back {
+    background-color: #ff0000;
+    color: #191919;
+    transform: rotateX(0deg) translateZ(60px);
+  }
+  .button .qube:hover .front {
+    transform: rotateX(0deg) translateZ(30px);
+  }
+  .button .qube:hover .back {
+    transform: rotateX(90deg) translateZ(30px);
+  }
+  .button:active .front {
+    border-radius: 0;
+    background-color: transparent;
+    color: #191919;
+  }
+  .button:active .front::before {
+    background-color: #ff0000;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .button:active .front::after {
+    left: 120%;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  
+  /* Hover on Links on navbar */
+  .hover-links {
+    color: #18272F;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .hover-links::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  .hover-links:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  
+  @media (max-width: 768px) {
+      .navbar-collapse .nav-item a {
+          color: #ffffff !important;
+      }
+  
+      .navbarColapse {
+          background-color: #343a40 !important;
+      }
+      
+      .removeLogo{
+          display: none;
+      }
+      
+      .openVh {
+          height: 100vh;
+      }
+      
+  }
+  
+  
+  /* /Nav !!! */
+  /* Hero */
+.bgimg {
+    padding-top: 91px !important;
+    background-image: url('../Images/hero_banner.jpg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    height: 80vh !important;
+
+}
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .container-hero {
+    display: flex;
+    align-items: center;
+  }
+  .container-hero h1 {
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+    color: #ffffff;
+  }
+  .container-hero h1 span.typed-text {
+    font-weight: normal;
+    color: #ffc107;
+  }
+  .container-hero h1 span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container-hero h1 span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+  /* /Hero !!! */
+
+  /* Select */
+.label-hide {
+    visibility: hidden;
+    opacity   : 0;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select .select {
+    display: none;
+}
+
+.select-selected {
+    background-image   : url(../Design/arrow-down.png);
+    background-position: right center;
+    background-repeat  : no-repeat;
+    background-size    : 2rem;
+    background-origin  : content-box;
+    height             : 2.5rem;
+    padding            : 0rem 0.75rem;
+    font-size          : 1rem;
+    border-radius      : 6px;
+    width              : 100%;
+    color              : #302f38 !important;
+    background-color   : #fff;
+    box-shadow         : inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition : border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition         : border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    cursor             : pointer;
+    display            : -webkit-box;
+    display            : flex;
+    -webkit-box-align  : center;
+    align-items        : center;
+}
+
+.select-items {
+    position        : relative;
+    background-color: #ffff;
+    z-index         : 99;
+    border-radius   : 6px;
+    font-size       : 1rem;
+    margin-top      : 2rem !important;
+}
+
+.select-items div {
+    color              : #302f38;
+    padding            : 0rem 0.75rem;
+    border             : 1px solid transparent;
+    border-color       : transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor             : pointer;
+    -webkit-user-select: none;
+    -moz-user-select   : none;
+    -ms-user-select    : none;
+    user-select        : none;
+    display            : -webkit-box;
+    display            : flex;
+    -webkit-box-align  : center;
+    align-items        : center;
+    height             : 3.5rem;
+    
+}
+
+.select-hide {
+    display: none !important;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: var(--light);
+    overflow        : hidden;
+}
+
+.select-items div:hover:first-child {
+    border-top-left-radius : 6px;
+    border-top-right-radius: 6px;
+}
+
+.select-items div:hover:last-child {
+    border-bottom-left-radius : 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* / Select !!! */
+
+/* Card Section */
+.border-radius {
+    border-radius: 4% !important;
+}
+
+.border-radius-img {
+    border-top-right-radius: 4% !important;
+    border-top-left-radius: 4% !important;
+}
+/* /Card Section !!! */
+/* JS Style Click */
+.active-filter {
+    background-color: #dc3545!important;
+    color: #000000 !important;
+}
+
+.active-i-developer,
+.active-i-marketing,
+.active-i-design {
+    display: none;
+}
+
+.projects-filter .row li:hover {
+    background: #5a5a5a;
+    transition: 0.3s ease-in-out;
+}
+
+/* / JS Style Click !!! */
+/* Card Hover Focus */
+@media (min-width:980px) {
+    .card-hover:hover .card {
+        filter: blur(5px) !important;
+    }
+    
+    .card{
+      box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+      cursor: pointer;
+    }
+      
+    .card-hover .card:hover{
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+      filter: blur(0px) !important;
+    }
+    
+}
+
+
+/* / Card Hover Focus !!! */

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BrainsterLabs</title>
+        <meta charset="utf-8" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="Blagojco Pizov" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+        <!-- Latest compiled and minified Bootstrap 4.4.1 CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+        <!-- Latest Font-Awesome CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+        <!-- CSS Style -->
+        <link rel="stylesheet" href="./assets/CSS/style.css">
+    </head>
+    <body class="bg-warning">
+        <!-- NAV Bar Section -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning py-3 px-lg-5 shadow-lg fixed-top">
+            <ul class="navbar-nav mx-lg-auto">
+                <li class="nav-item d-block text-center">
+                    <a href="./index.html" class="text-decoration-none text-reset hover-logo"  id="Logo">
+                        <img class="w-15" src="./assets/Design/Logo.png" alt="Logo img">
+                        <small class="text-uppercase font-weight-bold d-block">Brainster</small>
+                    </a>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="navbar-toggler-inner rounded"></div>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ulOpen" id="ulOpen">
+                    <li class="nav-item px-0 px-lg-4 py-3 py-lg-0">
+                        <a class="hover-links nav-link text-dark font-weight-bold" target="_blank" href="https://brainster.co/marketing/">Академија за маркетинг<span class="sr-only">(current)</span></a>
+                        <hr class="bg-warning m-0 d-lg-none p-1 rounded">
+                    </li>
+                    <li class="nav-item px-0 px-lg-4 py-3 py-lg-0">
+                        <a class="hover-links nav-link text-dark font-weight-bold" target="_blank" href="https://brainster.co/full-stack/">Академија за програмирање</a>
+                        <hr class="bg-warning m-0 d-lg-none p-1 rounded">
+                    </li>
+                    <li class="nav-item px-0 px-lg-4 py-3 py-lg-0">
+                        <a class="hover-links nav-link text-dark font-weight-bold" target="_blank" href="https://brainster.co/data-science/">Академија за data science</a>
+                        <hr class="bg-warning m-0 d-lg-none p-1 rounded">
+                    </li>
+                    <li class="nav-item px-0 px-lg-4 py-3 py-lg-0">
+                        <a class="hover-links nav-link text-dark font-weight-bold" target="_blank" href="https://brainster.co/graphic-design/">Академија за дизајн</a>
+                        <hr class="bg-warning m-0 d-lg-none p-1 rounded">
+                    </li>
+                    <li class="nav-item px-0 px-lg-4 py-3 py-lg-0">
+                        <a class="button" href="./assets/HTML/form.php">
+                            <div class="qube">
+                                <div class="front rounded">Кликни ме!!!</div>
+                                <div class="back rounded">Вработи наш студент</div>
+                             </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- /NAV Bar Section !!! -->
+        <!-- Hero -->
+        <div class="container-fluid container-hero bgimg pl-lg-5 m-0">
+            <h1 class="display-2">Brainster is <span class="typed-text"></span><span class="cursor">&nbsp;</span></h1>
+        </div>
+        <!-- /Hero !!! -->
+        <!-- Filter bar -->
+        <div class="container-fluid mx-0">
+            <div class="row text-white filters">
+                <div class="container-fluid px-0">
+                    <ul class="projects-filter list-unstyled bg-dark">
+                        <div class="row m-0">
+                            <li class="col-12 col-lg-4 checked-filter-marketing border-right borderMobile">
+                                <label class="d-flex w-100 py-5 mb-0 h5" for="filter-marketing">Проекти на студентите по академијата за маркетинг  
+                                    <i class=" fas fa-check-circle fa-1x  m-auto active-i-marketing"></i>
+                                    <input class="d-none" type="checkbox" id="filter-marketing">
+                                </label>
+                                
+                            </li>
+                            <li class="col-12 col-lg-4 checked-filter-developer border-right borderMobile">
+                                <label class="d-flex w-100 py-5 mb-0 h5" for="filter-developer">Проекти на студентите по академијата за програмирање
+                                    <i class=" fas fa-check-circle fa-1x m-auto active-i-developer"></i>
+                                </label>
+                                <input class="d-none" type="checkbox" id="filter-developer">
+                            </li>
+                            <li class="col-12 col-lg-4 checked-filter-design">
+                                <label class="d-flex w-100 py-5 mb-0 h5" for="filter-design">Проекти на студентите по академијата за дизајн
+                                    <i class=" fas fa-check-circle fa-1x m-auto active-i-design"></i>
+                                </label>
+                                <input class="d-none" type="checkbox" id="filter-design">
+                                
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Filter bar !!! -->
+        <!-- Card Section -->
+        <div class="container-fluid px-2 px-lg-0 py-0 bg-warning pt-4 pb-5 mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="font-weight-bolder display-4 p-4">Проекти</h2>
+                    </div>
+                    <div class="row card-hover">
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 marketing cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Marketing/marketing1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small class="font-weight-bolder">Академија за маркетинг</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 developer cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Developer/developer1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за програмирање</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 marketing cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Marketing/marketing1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small class="font-weight-bolder">Академија за маркетинг</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 design cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/GraphicDesign/design1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за дизајн</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 developer cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Developer/developer1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за програмирање</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 marketing cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Marketing/marketing1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small class="font-weight-bolder">Академија за маркетинг</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 developer cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Developer/developer1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за програмирање</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 design cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/GraphicDesign/design1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за дизајн</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 marketing cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Marketing/marketing1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small class="font-weight-bolder">Академија за маркетинг</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 developer cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Developer/developer1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за програмирање</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 developer cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Developer/developer1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за програмирање</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 marketing cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Marketing/marketing1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small class="font-weight-bolder">Академија за маркетинг</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 developer cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Developer/developer1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за програмирање</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 design cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/GraphicDesign/design1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за дизајн</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 marketing cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Marketing/marketing1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small class="font-weight-bolder">Академија за маркетинг</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 developer cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Developer/developer1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за програмирање</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 developer cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Developer/developer1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за програмирање</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 developer cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Developer/developer1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за програмирање</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 design cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/GraphicDesign/design1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за дизајн</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 pb-4 developer cardFilter">
+                            <div class="card border-radius shadow-lg">
+                                <div class="p-2">
+                                    <img src="./assets/Images/Developer/developer1.jpg" class="card-img-top border-radius-img" alt="...">
+                                </div>
+                                <div class="card-body p-2">
+                                    <p class="bg-warning d-inline-block py-1 px-3 rounded"><small  class="font-weight-bolder">Академија за програмирање</small></p>
+                                    <h4 class="card-title font-weight-bold">Име на проектот стои овде во две линии</h4>
+                                    <p class="card-text">Краток Опис во кој студентите ќе можат да опишат за што се работи во проектот.</p>
+                                    <div class="container-fluid p-0 text-right">
+                                        <a href="#" class="btn btn-danger m-2">Дознај повеќе</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Card Section !!! -->
+        <!-- Footer -->
+        <div class="container-fluid p-3 bg-dark text-center text-white">
+            <p class="m-0">Изработено од Благојчо Пижов на академијата на Brainster</p>
+        </div>
+        <!-- /Footer !!! -->
+        
+        
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        
+        <!-- Latest Compiled Bootstrap 4.4.1 JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+        <!-- JS -->
+        <script src="./assets/JS/index.js"></script>
+    </body>
+</html>
